@@ -4,13 +4,20 @@
 ?>
 
 <h1>Affichage des tables de multiplication</h1>
+<form action="#" method="get">
+<label for="table">table de multiplication</label>
+<input type="number" name="table">
+<input type="submit" value="Envoyer">
+
+</form>
 
 <?php 
     //définition d'une constante
-    define(NUMERO, 4);
+
+    echo "Table de multiplation" . $_GET['table'] . "<br/>";
 
     for ($i = 1; $i <= 10; $i++){
-        echo $i . "x" . NUMERO . "=" . $i * NUMERO . "<br/>";
+        echo $i . "x" . $_GET['table'] . "=" . $i * $_GET['table'] . "<br/>";
     }
 ?>
 
