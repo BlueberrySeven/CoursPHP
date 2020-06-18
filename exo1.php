@@ -12,13 +12,15 @@
 </form>
 
 <?php 
-    //définition d'une constante
+    
+    if (isset($_GET["table"])){
+        echo "Table de multiplation" . $_GET["table"] . "<br/>";
 
-    echo "Table de multiplation" . $_GET['table'] . "<br/>";
-
-    for ($i = 1; $i <= 10; $i++){
-        echo $i . "x" . $_GET['table'] . "=" . $i * $_GET['table'] . "<br/>";
+        for ($i = 1; $i <= 10; $i++){
+            echo $i . "x" . $_GET["table"] . "=" . $i * $_GET["table"] . "<br/>";
+        }
     }
+    
 ?>
 
 <?php 
