@@ -19,6 +19,8 @@
         for ($i = 1; $i <= 10; $i++){
             echo $i . "x" . $_GET["table"] . "=" . $i * $_GET["table"] . "<br/>";
         }
+    } else {
+        echo "Saisir une valeur";
     }
     
 ?>
