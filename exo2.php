@@ -7,7 +7,7 @@
 <form action="#" method="POST">
 <label for="hauteur">hauteur pyramide</label>
 <input type="number" name="hauteur">
-<input type="submit" value="Envoyer">
+<input type="submit" value="Envoye">
 
 </form>
 
