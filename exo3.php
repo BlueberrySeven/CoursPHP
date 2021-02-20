@@ -25,10 +25,10 @@
     if(isset($_POST["rayon"]) && $_POST["rayon"] >0){
         $rayon = $_POST["rayon"];
 
-        if(isset($_perimetre)){
+        if(isset($_POST["perimetre"])){
             echo "Le périmètre est de " . $_POST["rayon"]*2*pi(). "cm" ."<br/>";
         }
-        if(isset($_aire)){
+        if(isset($_POST["aire"])){
             echo "L'aire est de " . pi()*$_POST["rayon"]*$_POST["rayon"]. "m2" . "<br/>";
         }
     } else {
