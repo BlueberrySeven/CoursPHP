@@ -16,11 +16,15 @@
 <?php 
     
     if(isset($_POST["chiffre"]) && $_POST["chiffre"] > 0){
-        $ChSaisi = $_POST["chiffre"];
+        $ChSaisi = (int)$_POST["chiffre"];
         if($ChSaisi === $ChAlea){
             echo "Gagné !";
-        } elseif($ChSaisi > $ChAlea || $ChSaisi < $ChAlea){
-            echo "Perdu!";
+        } else {
+            if($ChAlea > $ChSaisi){
+                echo "Le chiffre est plus grand";
+            } else {
+                echo "Le chiffre est plus petit";
+            }
         }
     } else {
         echo "Saisir un chiffre";
