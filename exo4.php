@@ -16,9 +16,11 @@
 <?php 
     
     if(isset($_POST["chiffre"]) && $_POST["chiffre"] > 0){
-        // echo " Voici le chiffre" . $_POST["chiffre"] ;
-        if($_POST["chiffre"] == $ChAlea){
+        $ChSaisi = $_POST["chiffre"];
+        if($ChSaisi === $ChAlea){
             echo "Gagné !";
+        } elseif($ChSaisi > $ChAlea || $ChSaisi < $ChAlea){
+            echo "Perdu!";
         }
     } else {
         echo "Saisir un chiffre";
