@@ -17,7 +17,7 @@
    // fonction verification array
    function verifTab($tab){
        for ($i=0; $i < count($tab)-1; $i++) { 
-           if ($tab[0]%2 == 1) {
+           if ($tab[$i]%2 == 1) {
                return true;
            }
        }
