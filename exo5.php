@@ -17,11 +17,11 @@
    // fonction verification array
    function verifTab($tab){
        for ($i=0; $i < count($tab)-1; $i++) { 
-           if ($tab[$i]%2 === 0) {
-               return true;
+           if ($tab[$i]%2 !== 0) {
+               return false;
            }
        }
-       return false;
+       return true;
    }
 
    //passer tnNb en argument
